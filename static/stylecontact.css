@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    margin: 12px 0px;
+}
+/* to push the footer to the bottom we put the form in a container and keep its size as 100vh */
+.container{
+    min-height: 77vh;
+    /* height: 100%; this will take how much place it want only */
+}
+
+.myform{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 0px;
+    background-color: rgb(4, 135, 223);
+    border-radius: 10px;
+    /* justify-content: center; */
+}
+.myInput{
+    width: 50%;
+    margin: 6px auto;
+    padding: 6px 0px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: rgb(4, 135, 223);
+    font-weight: bold;
+    font-size: 16px;
+    outline: none; /* to remove the outline */
+}
+.btn{
+    /* width will be -how much the size of submit */
+    margin: 6px auto;
+    padding: 6px 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    color: rgb(4, 135, 223);
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color:white ;
+}

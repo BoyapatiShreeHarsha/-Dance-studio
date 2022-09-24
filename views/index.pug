@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Harsha Dance Acedamy
+        style 
+            include ../static/style.css
+    body
+        nav#navbar.class_name 
+            ul
+                #logo 
+                    img(src="../static/logo.jpg")
+                    span HDA 
+                li #[a(href="/") Home ]
+                li #[a(href="/") About ]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info ]
+                li #[a(href="/") Contact us ]
+        
+        section#introsection 
+            div Welcome to Harsha Dance academy.
+            div.small Play Pause repeat
+        section#missionsection   
+            div Our Mission 
+            .row
+                .cards 
+                    h3 Ballet
+                    img(src='../static/ballet.jpg') 
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, est provident dolorum quod eos natus, autem odit ex quaerat odio facilis quisquam quia reiciendis. 
+                .cards 
+                    h3 Aerobatics 
+                    img(src='../static/aerobatics.jpg')
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, est provident dolorum quod eos natus, autem odit ex quaerat odio facilis quisquam quia reiciendis. 
+                .cards 
+                    h3 Personal Training
+                    img(src='../static/personal.jpg') 
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, est provident dolorum quod eos natus, autem odit ex quaerat odio facilis quisquam quia reiciendis.   
+        section#sponsorsection 
+            div Our Sponsers
+            #sponsers 
+                img(src="../static/apple.png", alt="" class="spimg")
+                img(src="../static/hp.png", alt="" class="spimg")
+                img(src="../static/microsoft (2).png", alt="" class="spimg")
+                img(src="../static/skype.png", alt="" class="spimg")
+
+        footer#footer 
+            | Copyright To SHB
+        script
+            include ../static/script.js

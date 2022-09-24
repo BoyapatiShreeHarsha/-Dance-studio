@@ -1,0 +1,21 @@
+//- layout.pug  the base structure
+doctype html
+html
+  head
+    title Harsha Dance Acedamy
+    block scripts
+    block style
+  body
+    nav#navbar.class_name 
+        ul
+            #logo 
+                img(src="../static/logo.jpg")
+                span HDA 
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class info ]
+            li #[a(href="/contact") Contact us ] 
+    block content
+    footer#footer 
+        | Copyright To SHB

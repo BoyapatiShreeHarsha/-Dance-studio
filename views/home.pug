@@ -1,0 +1,38 @@
+//- we are going to fill the base.pug
+//- extends base.pug(href="../views/base.pug")
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+//-   script
+            include ../static/script.js       (try this)
+block style
+    style 
+        include ../static/style.css
+
+block content       
+    section#introsection 
+        div Welcome to Harsha Dance academy.
+        div.small Play Pause repeat
+    section#missionsection   
+        div Our Mission 
+        .row
+            .cards 
+                h3 Ballet
+                img(src='../static/ballet.jpg') 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, est provident dolorum quod eos natus, autem odit ex quaerat odio facilis quisquam quia reiciendis. 
+            .cards 
+                h3 Aerobatics 
+                img(src='../static/aerobatics.jpg')
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, est provident dolorum quod eos natus, autem odit ex quaerat odio facilis quisquam quia reiciendis. 
+            .cards 
+                h3 Personal Training
+                img(src='../static/personal.jpg') 
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, est provident dolorum quod eos natus, autem odit ex quaerat odio facilis quisquam quia reiciendis.   
+    section#sponsorsection 
+        div Our Sponsers
+        #sponsers 
+            img(src="../static/apple.png", alt="" class="spimg")
+            img(src="../static/hp.png", alt="" class="spimg")
+            img(src="../static/microsoft (2).png", alt="" class="spimg")
+            img(src="../static/skype.png", alt="" class="spimg")
